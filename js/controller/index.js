@@ -8,7 +8,7 @@
  * @params {none}
  * @return: none
  * @operations {"decimal2binary", "binary2decimal"}
- */	
+ */
 var indexController = {
 	version: "0.0.1",
 	operation: "decimal2binary",
@@ -17,18 +17,18 @@ var indexController = {
 	},
 	/**
 	 * @name: swapInputs
-	 * @description: Changes the div decimal-block with the div binary-block, changes 
+	 * @description: Changes the div decimal-block with the div binary-block, changes
 	 				 the operation value of the object
  	 * @params {number}
  	 * @return: {none}
 	 */
-	swapInputs: function () {
+	swapInputs: function () { //Aleix
  		return false;
 	},
 	/**
 	 * @name: convert
-	 * @description: Calls to converter to calculate the operation. Changes the 
-	                 input value from binary/decimal inputs with the result of the 
+	 * @description: Calls to converter to calculate the operation. Changes the
+	                 input value from binary/decimal inputs with the result of the
 	                 operation
  	 * @params {number}
  	 * @return: {none}

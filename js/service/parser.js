@@ -7,7 +7,7 @@
  * @description: checks inputs searching for patterns
  * @params {none}
  * @return: none
- */	
+ */
 var parser = {
 	version: "0.0.1",
 	version: function () {
@@ -19,7 +19,7 @@ var parser = {
  	 * @params {number}
  	 * @return: true if number is between 0-9, false otherwise
 	 */
-	isDigit: function (number) {
+	isDigit: function (number) { //Aleix
  		return false;
 	},
 	/**
