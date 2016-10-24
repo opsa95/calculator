@@ -20,7 +20,18 @@ var parser = {
  	 * @return: true if number is between 0-9, false otherwise
 	 */
 	isDigit: function (number) { //Aleix
- 		return false;
+		var digitVerification = false;
+		var digit = "";
+		for (var i = 0; i < number.length; i++) {
+			digit = number.substr(i, 1);
+			if (digit >= "0" && digit <= "9") {
+					digitVerification = true;
+			}
+			else {
+					digitVerification = false;
+			}
+		}
+		return digitVerification;
 	},
 	/**
 	 * @name: isBit
