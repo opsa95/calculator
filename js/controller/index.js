@@ -41,6 +41,12 @@ var indexController = {
  	 * @return: {none}
 	 */
 	convert: function () {
+		// Tienes que mirar cual está encima. ese es el que se convertirá
+		// Luego al darle al botón de convert comprobará si es decimal o binario con las funciones
+		// parser.isDigit(numeroinsertado)
+		// si no es el mismo valor que pide la caja error
+		// si es el mismo valor haz la conversión con la función adecuada.
+		// :)
  		return false;
 	},
 }
