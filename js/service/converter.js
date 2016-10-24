@@ -19,7 +19,7 @@ var converter = {
  	 * @params {decimal}
  	 * @return: the decimal number converted to binary
 	 */
-	decimal2binary: function (decimal) { // DAVID
+	decimal2binary: function (decimal) {
  		return 0;
 	},
 	/**
@@ -28,7 +28,8 @@ var converter = {
  	 * @params {binary}
  	 * @return: the binary number converted to decimal
 	 */
-	binary2decimal: function (binary) {
+	binary2decimal: function (binary) { // DAVID
+		
  		return 0;
 	},
 }

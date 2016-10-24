@@ -37,7 +37,7 @@ var parser = {
 				isBin=true;
 			} else{
 				isBin=false;
-				break;
+				return isBin;
 			}
 		}
  		return isBin;
