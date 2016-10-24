@@ -7,8 +7,9 @@
  * @description: Converts into different formats
  * @params {none}
  * @return: none
- */	
-var converter = {
+ */
+var converter =
+ {
 	version: "0.0.1",
 	version: function () {
 		return this.version;
@@ -18,10 +19,20 @@ var converter = {
 	 * @description: Converts from decimal to binary
  	 * @params {decimal}
  	 * @return: the decimal number converted to binary
-	 */
-	decimal2binary: function (decimal) {
- 		return 0;
+	 * @author:Baralides Álvarez
+	 *
+  */
+
+	decimal2binary: function (decimal)
+	{
+		var digit = parseInt.toBinaryString(decimal));
+
+ 		return digit;
 	},
+
+;
+
+}
 	/**
 	 * @name: binary2decimal
 	 * @description: Converts from binary to decimal
