@@ -7,7 +7,7 @@
  * @description: Converts into different formats
  * @params {none}
  * @return: none
- */	
+ */
 var converter = {
 	version: "0.0.1",
 	version: function () {
@@ -19,7 +19,7 @@ var converter = {
  	 * @params {decimal}
  	 * @return: the decimal number converted to binary
 	 */
-	decimal2binary: function (decimal) {
+	decimal2binary: function (decimal) { // DAVID
  		return 0;
 	},
 	/**

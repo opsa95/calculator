@@ -7,7 +7,7 @@
  * @description: checks inputs searching for patterns
  * @params {none}
  * @return: none
- */	
+ */
 var parser = {
 	version: "0.0.1",
 	version: function () {
@@ -28,7 +28,7 @@ var parser = {
  	 * @params {number}
  	 * @return: true if number is 0 or 1, false otherwise
 	 */
-	isBit: function (number) {
+	isBit: function (number) { // DAVID
  		return false;
 	},
 }
