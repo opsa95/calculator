@@ -9,7 +9,7 @@
  * @return: none
  */
 var converter = {
-	version: "0.0.1",
+	version: "0.0.2",
 	version: function () {
 		return this.version;
 	},
@@ -27,9 +27,10 @@ var converter = {
 	 * @description: Converts from binary to decimal
  	 * @params {binary}
  	 * @return: the binary number converted to decimal
+	 * @author David Oporto
 	 */
 	binary2decimal: function (binary) { // DAVID
-		
- 		return 0;
+		var digit = parseInt(binary, 2);
+ 		return digit;
 	},
 }
