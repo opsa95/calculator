@@ -21,9 +21,16 @@ var indexController = {
 	 				 the operation value of the object
  	 * @params {number}
  	 * @return: {none}
+	 * @author Aleix Velasco
 	 */
 	swapInputs: function () { //Aleix
- 		return false;
+		if ($("#binary-block").next($("#buttons-block"))) {
+				$("#binary-block").after($("#decimal-block"));
+		}else if($("#decimal-block").next($("#buttons-block"))){
+				$("#decimal-block").after($("#binary-block"));
+		}
+
+ 		//return false;
 	},
 	/**
 	 * @name: convert
@@ -37,3 +44,9 @@ var indexController = {
  		return false;
 	},
 }
+
+$(document).ready(function() {
+	$("#swap").click(function() {
+			indexController.swapInputs();
+	});
+})
