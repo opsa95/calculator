@@ -18,9 +18,21 @@ var parser = {
 	 * @description: Checks if number is between 0-9
  	 * @params {number}
  	 * @return: true if number is between 0-9, false otherwise
+	 * @author Aleix Velasco
 	 */
-	isDigit: function (number) {
- 		return false;
+	isDigit: function (number) { //Aleix
+		var digitVerification = false;
+		var digit = "";
+		for (var i = 0; i < number.length; i++) {
+			digit = number.substr(i, 1);
+			if (digit >= "0" && digit <= "9") {
+					digitVerification = true;
+			}
+			else {
+					digitVerification = false;
+			}
+		}
+		return digitVerification;
 	},
 	/**
 	 * @name: isBit

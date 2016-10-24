@@ -8,7 +8,7 @@
  * @params {none}
  * @return: none
  * @operations {"decimal2binary", "binary2decimal"}
- */	
+ */
 var indexController = {
 	version: "0.0.1",
 	operation: "decimal2binary",
@@ -17,18 +17,25 @@ var indexController = {
 	},
 	/**
 	 * @name: swapInputs
-	 * @description: Changes the div decimal-block with the div binary-block, changes 
+	 * @description: Changes the div decimal-block with the div binary-block, changes
 	 				 the operation value of the object
  	 * @params {number}
  	 * @return: {none}
+	 * @author Aleix Velasco
 	 */
-	swapInputs: function () {
- 		return false;
+	swapInputs: function () { //Aleix
+		if ($("#binary-block").next($("#buttons-block"))) {
+				$("#binary-block").after($("#decimal-block"));
+		}else if($("#decimal-block").next($("#buttons-block"))){
+				$("#decimal-block").after($("#binary-block"));
+		}
+
+ 		//return false;
 	},
 	/**
 	 * @name: convert
-	 * @description: Calls to converter to calculate the operation. Changes the 
-	                 input value from binary/decimal inputs with the result of the 
+	 * @description: Calls to converter to calculate the operation. Changes the
+	                 input value from binary/decimal inputs with the result of the
 	                 operation
  	 * @params {number}
  	 * @return: {none}
@@ -37,3 +44,9 @@ var indexController = {
  		return false;
 	},
 }
+
+$(document).ready(function() {
+	$("#swap").click(function() {
+			indexController.swapInputs();
+	});
+})
